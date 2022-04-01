@@ -1,15 +1,20 @@
 .services {
-  @apply relative;
+  @apply relative px-2;
 
   z-index: 10;
-  padding: 0 16.5vw 98.3px;
+
+  @screen md {
+    padding: 0 16.5vw 98.3px;
+  }
 
   &__container {
-    @apply grid grid-cols-4;
+    @apply grid grid-cols-1 md:grid-cols-4;
   }
 }
 
 .service {
+  @apply mb-8 md:mb-0;
+
   $padding-x: 16.5px;
 
   & img {

@@ -1,0 +1,16 @@
+.footer {
+  @apply relative;
+
+  background-color: $bg-main-layout;
+  height: 144px;
+  width: 100%;
+  z-index: 10;
+
+  & img {
+    @apply absolute;
+    top: -100px;
+    left: -90px;
+
+    transform: rotate(-95deg);
+  }
+}

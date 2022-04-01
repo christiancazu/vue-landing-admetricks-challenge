@@ -1,8 +1,11 @@
 .hero {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-12 w-full relative;
+  @apply grid grid-cols-1 md:grid-cols-2 gap-12 w-full relative py-36 px-2;
   
   z-index: 10;
-  padding: 594px 16.5vw 98.3px;
+  
+  @screen md {
+    padding: 594px 16.5vw 98.3px;
+  }
   
   &__info {
     &__text-header {
@@ -16,22 +19,21 @@
       color: $text-color-light;
       font-size: 38px;
       margin-bottom: 32px;
-      
-      & > span {
-        position: relative;
-        width: 100%;
 
-        &::before {
-          content: '';
+      &--underlined {
           background: transparent linear-gradient(90deg, #00D4FF 0%, #AEDA28 100%, #FE7117 100%) 0% 0% no-repeat padding-box;
           border-radius: 12px;
           opacity: 0.5;
           height: 20px;
           bottom: 0;
+          left: 0;
           position: absolute;
-          width: inherit;
-          white-space: normal;
-        }
+          width: 100%;
+      }
+      
+      & > div {
+        @apply relative w-fit;
+        display: inline;
       }
     }
 
@@ -71,7 +73,11 @@
   }
 
   &__images {
-    @apply relative;
+    @apply relative hidden;
+
+    @screen md {
+      @apply block;
+    }
     
     &--horizontal,
     &--vertical {

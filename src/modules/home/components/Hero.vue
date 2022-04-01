@@ -5,7 +5,11 @@
       Estamos para ayudarte
     </div>
     <h1 class="hero__info__text-title">
-      ¿Tienes problemas<br>para <span>entender el mercado</span> de la publicidad digital?
+      ¿Tienes problemas para
+      <div class="hero__info__text-title--text">
+        entender el mercado
+        <div class="hero__info__text-title--underlined" />
+      </div>de la publicidad digital?
     </h1>
     <div class="hero__info__text-subtitle">
       El Mercado de la publicidad online es incierto y complejo, Admetricks te
