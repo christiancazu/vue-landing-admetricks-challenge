@@ -1,1 +1,13 @@
 @import 'tailwind';
+
+@import 'variables';
+@import 'fonts';
+@import 'svg';
+@import 'main';
+@import 'hero';
+@import 'triangles';
+
+body {
+  @apply relative font-regular;
+  background-color: $bg-body;
+}

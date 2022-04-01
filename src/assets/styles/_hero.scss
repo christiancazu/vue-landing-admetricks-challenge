@@ -1,0 +1,98 @@
+.hero {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-12 w-full relative;
+  z-index: 10;
+
+  padding: 594px 16.5vw;
+  
+  &__info {
+    &__text-header {
+      color: $text-color-primary;
+      font-size: 18px;
+    }
+
+    &__text-title {
+      @apply font-semibold;
+      
+      color: $text-color-light;
+      font-size: 38px;
+      margin-bottom: 32px;
+      
+      & > span {
+        position: relative;
+        width: 100%;
+
+        &::before {
+          content: '';
+          background: transparent linear-gradient(90deg, #00D4FF 0%, #AEDA28 100%, #FE7117 100%) 0% 0% no-repeat padding-box;
+          border-radius: 12px;
+          opacity: 0.5;
+          height: 20px;
+          bottom: 0;
+          position: absolute;
+          width: inherit;
+          white-space: normal;
+        }
+      }
+    }
+
+    &__text-subtitle {
+      color: $text-color-gray;
+      font-size: 18px;
+      margin-bottom: 25px;
+      
+      & span {
+        color: $text-color-primary;
+      }
+    }
+
+    &__btns {
+      @apply flex items-center;
+
+      & > button {
+        @apply py-2 px-6;
+
+        border-radius: 20px;
+        background-color: $primary-color;
+
+        &:hover {
+          background-color: lighten($primary-color, 10%);
+        }
+      }
+
+      & > div {
+        @apply ml-4 cursor-pointer;
+        color: $text-color-light;
+
+        &:hover {
+          color: darken($text-color-light, 10%);
+        }
+      }
+    }
+  }
+
+  &__images {
+    @apply relative;
+    
+    &--horizontal,
+    &--vertical {
+      background: #0A2540 0% 0% no-repeat padding-box;
+      border: 1px solid #FFFFFF;
+      border-radius: 32px;
+      @apply absolute;
+    }
+
+    &--horizontal {
+      margin: 1rem 0;
+      width: 100%;
+      height: 90%;
+      
+    }
+    
+    &--vertical {
+      width: 260px;
+      height: 110%;
+      right: -100px;
+      top: -8%;
+    }
+  }
+}

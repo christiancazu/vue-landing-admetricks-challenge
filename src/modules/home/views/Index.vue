@@ -1,13 +1,19 @@
 <template>
-<h2>
-  HOME
-</h2>
+<section>
+  <Hero />
+</section>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 import { defineComponent } from 'vue'
 
-defineComponent({
-  name: 'HomeIndex'
+import Hero from '@/modules/home/components/Hero.vue'
+
+export default defineComponent({
+  name: 'HomeIndex',
+
+  components: {
+    Hero
+  }
 })
 </script>

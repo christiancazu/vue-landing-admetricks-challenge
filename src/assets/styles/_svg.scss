@@ -1,0 +1,26 @@
+.svg {
+  &__top-triangle {
+    @apply absolute;
+  }
+
+  &__triangle,
+  &__triangles {
+    @apply absolute;
+    fill: transparent;
+    stroke: transparentize($bg-body, .9);
+    stroke-width: 1;
+    z-index: -1;
+  }
+  
+  &__triangle {
+    bottom: 160px;
+    right: -180px;
+    transform: translateX(10px);
+  }
+
+  &__triangles {
+    bottom: -200px;
+    right: -340px;
+    transform: translateX(120px);
+  }
+}

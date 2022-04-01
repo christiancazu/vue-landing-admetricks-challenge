@@ -1,0 +1,37 @@
+main {
+  overflow: hidden;
+}
+
+.main-layout {
+  background-color: $bg-main-layout;
+  height: 100%;
+  
+  &__page {
+    z-index: 1;
+  }
+}
+
+.bg {
+  @apply h-full w-full absolute;
+  z-index: -1;
+
+  &__grid {
+    @apply h-full grid grid-cols-4;  
+    padding: 0 16vw;
+  
+    &__column {
+      border-right: 1px solid transparentize($bg-body, 0.9);
+  
+      &:first-child {
+        border-left: 1px solid transparentize($bg-body, 0.9);
+      }
+
+      & > svg {
+        @apply absolute;
+        // top: 334px;
+        // margin-top: 234px;
+        // transform: translate(-48px, 234px)
+      }
+    }
+  }
+}
