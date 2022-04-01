@@ -1,0 +1,32 @@
+.services {
+  @apply relative;
+
+  z-index: 10;
+  padding: 0 16.5vw 98.3px;
+
+  &__container {
+    @apply grid grid-cols-4;
+  }
+}
+
+.service {
+  $padding-x: 16.5px;
+
+  & img {
+    padding: 0 $padding-x;
+    margin-bottom: 10.5px;
+  }
+  
+  &__title {
+    @apply font-semibold text-lg;
+    border-left: 4px solid $primary-color;
+    color: $text-color-light;
+    margin-bottom: 11px;
+    padding: 0 $padding-x;
+  }
+
+  &__description {
+    color: $text-color-gray;
+    padding: 0 $padding-x;
+  }
+}

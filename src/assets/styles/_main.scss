@@ -12,7 +12,7 @@ main {
 }
 
 .bg {
-  @apply h-full w-full absolute;
+  @apply h-full w-full absolute top-0 left-0;
   z-index: -1;
 
   &__grid {
@@ -24,13 +24,6 @@ main {
   
       &:first-child {
         border-left: 1px solid transparentize($bg-body, 0.9);
-      }
-
-      & > svg {
-        @apply absolute;
-        // top: 334px;
-        // margin-top: 234px;
-        // transform: translate(-48px, 234px)
       }
     }
   }
