@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import homeRoutes from '@/modules/home/routes'
+import graphicRoutes from '@/modules/chart/routes'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -9,6 +10,7 @@ const routes: Array<RouteRecordRaw> = [
       ...homeRoutes
     ]
   },
+  ...graphicRoutes,
   {
     path: '/:catchAll(.*)*',
     component: () => import('@/modules/common/views/Error404.vue')

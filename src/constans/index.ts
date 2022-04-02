@@ -1,0 +1,1 @@
+export const BRANDS_EVENT_BUS = 'BRANDS_EVENT_BUS'
