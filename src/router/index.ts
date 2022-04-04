@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import homeRoutes from '@/modules/home/routes'
 import graphicRoutes from '@/modules/chart/routes'
 
