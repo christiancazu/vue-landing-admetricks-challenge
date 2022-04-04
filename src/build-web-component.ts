@@ -1,6 +1,6 @@
 import { defineSSRCustomElement } from 'vue'
 
-import Chart from '@/modules/chart/components/Chart.ce.vue'
+import Chart from '@/Chart.ce.vue'
 
 const ChartElement = defineSSRCustomElement(Chart)
 
